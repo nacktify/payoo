@@ -26,12 +26,12 @@
 
                     <label class="fieldset-label text-base">Mobile Number</label>
                     <input type="tel" id="phone-numb" class="input validator tabular-nums text-slate-500" required
-                        placeholder="Enter your number" pattern="[0-9]*" minlength="11" maxlength="15"
+                        placeholder="Enter your number" pattern="[0-9]*" minlength="4" maxlength="15"
                         title="Must be 11 digits" />
-                    <p class="validator-hint">Enter your 11 digits number!</p>
+                    <p class="validator-hint">Enter your number!</p>
 
                     <label class="fieldset-label text-base">4 Digit Pin</label>
-                    <input type="password" class="input validator text-slate-500" placeholder="Enter 4 Digit Pin" required />
+                    <input id="pin-numb" type="password" class="input validator text-slate-500" placeholder="Enter 4 Digit Pin" required />
 
                     <button id="btn-login" class="btn btn-neutral mt-4 text-base">Login</button>
                 </form>
