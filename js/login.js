@@ -12,8 +12,9 @@ document.getElementById('btn-login').addEventListener('click', function (event) 
     //step 4: validate phone and pin
     if (mobileNumber === '2580' && pinNumber === '2580') {
         //step 5: allow user to use the website
-        console.log('You are logged in!')
+        console.log('You are logged in!');
+        window.location.href = '/home.html';
     } else {
-        alert('Wrong credentials! Try again.')
+        alert('Wrong credentials! Try again.');
     }
 })

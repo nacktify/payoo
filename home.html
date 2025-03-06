@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main>
+        <section class="flex justify-center">
+            <div class="mockup-phone">
+                <div class="mockup-phone-camera"></div>
+                <div class="mockup-phone-display text-white bg-white">
+                    <!-- available balance -->
+                    <div class="mt-16  mx-6">
+                        <div class="stats flex justify-center items-center">
+                            <div>
+                                <img src="assets/Group.png" class="h-12" alt="">
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value text-black text-lg">89400</div>
+                                <div class="stat-desc text-slate-700 text-sm">Available Balance</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider mt-0"></div>
+                    <!-- Welcome message -->
+                    <div class="space-y-3 mx-6">
+                        <h1 class="text-black text-2xl font-bold">🔥 Welcome to Payooo!</h1>
+                        <p class="text-base text-slate-600">Enjoy easy and convenient financial services with us.
+                            Cashout charge is low and </p>
+                    </div>
+
+                    <div class="divider"></div>
+                    <!-- buttons -->
+                    <div class="flex justify-center gap-4">
+                        <button class="btn btn-lg">Add Money</button>
+                        <button class="btn btn-lg">Cash Out</button>
+                    </div>
+                    <!-- add money form starts -->
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label">Amount to Add</label>
+                            <input type="email" class="input text-slate-600 text-xs"
+                                placeholder="Add Amount to withdraw" />
+                            <label class="fieldset-label">Pin Number</label>
+                            <input type="password" class="input text-slate-600 text-xs"
+                                placeholder="Enter 4 digit pin number" />
+                            <button class="btn btn-neutral mt-4">Add Money</button>
+                        </fieldset>
+                    </div>
+                    <!-- add money form ends -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
