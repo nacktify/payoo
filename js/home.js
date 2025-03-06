@@ -4,15 +4,23 @@ document.getElementById('btn-add-money').addEventListener('click', function (e) 
     e.preventDefault();
     //step 2: validate the pin and add money
     const pinNumber = document.getElementById('input-pin-numb').value;
-
     const addMoney = document.getElementById('input-add-money').value;
+    //step 3: get current amount
+    const mainBalance = document.getElementById('main-balance').innerText;
 
-    console.log(pinNumber,'$', addMoney)
 
     if (pinNumber === '2580') {
+        //step 4: make them nmbr and then operate a addition
+        const nmbrAddMoney = parseFloat(addMoney);
+        const nmbrMainBalance = parseFloat(mainBalance);
 
-    } else {
-        alert('Wrong credential, Please try again!')
+        const newMainBalance = nmbrAddMoney + nmbrMainBalance;
+
+        // step 5: update the main balance
+        document.getElementById('main-balance').innerText = newMainBalance;
+    }
+    else {
+        alert('Failed to add money, Please try again!')
     }
 
 })
