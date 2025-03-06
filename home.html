@@ -38,11 +38,11 @@
                     <div class="divider"></div>
                     <!-- buttons -->
                     <div class="flex justify-center gap-4">
-                        <button class="btn btn-lg">Add Money</button>
-                        <button class="btn btn-lg">Cash Out</button>
+                        <button id="btn-add-money-show" class="btn btn-lg">Add Money</button>
+                        <button id="btn-cash-out-show" class="btn btn-lg">Cash Out</button>
                     </div>
                     <!-- add money form starts -->
-                    <div class="card-body hidden">
+                    <div id="add-money-form" class="card-body">
                         <form class="fieldset">
                             <label class="fieldset-label">Amount to Add</label>
                             <input id="input-add-money" type="text" class="input text-slate-600 text-xs"
@@ -56,11 +56,11 @@
                     <!-- add money form ends -->
 
                     <!-- cash out starts -->
-                    <div class="card-body">
+                    <div id="cash-out-form" class="card-body hidden">
                         <form class="fieldset">
-                            <label class="fieldset-label">Amount to Add</label>
+                            <label class="fieldset-label">Amount to cash Out</label>
                             <input id="input-cash-out" type="text" class="input text-slate-600 text-xs"
-                                placeholder="Enter Amount to Add Money" />
+                                placeholder="Enter Amount to Cash Out" />
                             <label class="fieldset-label">Pin Number</label>
                             <input id="input-pin-number" type="password" class="input text-slate-600 text-xs"
                                 placeholder="Enter 4 digit pin number" />
@@ -74,6 +74,8 @@
     </main>
     <!-- <script src="js/home.js"></script> -->
     <script src="js/addMoney.js"></script>
+    <script src="js/cashOut.js"></script>
+    <script src="js/features.js"></script>
 </body>
 
 </html>
